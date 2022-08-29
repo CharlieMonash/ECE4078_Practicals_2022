@@ -1,0 +1,12 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = CharlieMonash
+	email = cdix0004@student.monash.edu
+[core]
+	editor = \"C:\\Users\\charl\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code\" --wait
+[credential]
+	helper = "!f() { /root/.vscode-server/bin/e4503b30fc78200f846c62cf8091b76ff5547662/node /tmp/vscode-remote-containers-bec577f06deb73e2fbed2c65dc60fe09c337431c.js $*; }; f"
